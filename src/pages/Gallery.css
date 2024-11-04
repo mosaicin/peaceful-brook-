@@ -1,0 +1,28 @@
+.chess-gallery {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 16px);
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-item button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

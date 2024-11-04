@@ -1,0 +1,63 @@
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  color: #000;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: #00f;
+}
+
+.nav-link {
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 1),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.4);
+  background-color: #d1d1d1;
+}
